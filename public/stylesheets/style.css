@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+    margin: 0;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: hsl(197, 100%, 50%);
+}
+
+
+/* 网格样式 */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 880px 1000px 500px;
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+.grid-item {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+
+/* 图片外框div */
+
+.homePic_div {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 图片格式 */
+
+.homePic {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 联系我们 */
+
+input[type=text],
+textarea {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+input[type=text]:focus,
+textarea:focus {
+    box-shadow: 0 0 5px rgb(81, 175, 238);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(81, 175, 238);
+}
+
+.input-error,
+.textarea-error {
+    box-shadow: 0 0 5px rgb(238, 81, 81);
+    padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px;
+    border: 1px solid rgb(238, 81, 81);
+}
